@@ -1,4 +1,6 @@
+import React from 'react';
 import './App.css'
+import images from '../public/img/images.js'
 
 function App() {
   return (
