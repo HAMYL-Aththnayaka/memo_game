@@ -27,6 +27,8 @@ function App() {
         image: image,
         id: Math.random()
       }));
+    setChoiceOne(null);
+    setChoiceTwo(null);
     setCard(suffledCards);
     setTurns(0);
   }
@@ -47,10 +49,8 @@ function App() {
   }
 
   useEffect(() => {
-    //this make the other cards unflipalbel while 2 are being compared
-
-
     if (choiceOne && choiceTwo) {
+      //this make the other cards unflipalbel while 2 are being compared
           setDisabled(true);
       if (choiceOne.image.src === choiceTwo.image.src) {
         // console.log("They are equal !!!");
@@ -74,7 +74,10 @@ function App() {
     }
   }, [choiceOne, choiceTwo]);
 
-
+  //new game automatically start when the page loads
+  useEffect(()=>{
+    suffeleCards();
+  },[])
 
   return (
     <div className="App">
@@ -89,8 +92,10 @@ function App() {
             flipped={card === choiceOne || card === choiceTwo || card.matched}
             disabled ={disabled}
           />
-
         ))}
+      </div>
+      <div>
+        <p><b>No. Turns : {turns}</b></p>
       </div>
     </div>
   );

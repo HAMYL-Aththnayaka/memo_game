@@ -1,7 +1,14 @@
 body{
    background: #a390c8;
 }
+p ,h1{
+  font-size: 40px;
+}
 
+h1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:brown;
+}
 .App {
   max-width: 860px;
   margin: 40px auto;
