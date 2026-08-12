@@ -4,10 +4,25 @@ body{
 p ,h1{
   font-size: 40px;
 }
+.header-container {
+  display: relative;
+  flex-direction: column; /* Stacks items vertically: logo first, h1 second */
+  align-items: center; /* Aligns both to the left (use 'center' for centered alignment) */
+ 
+}
 
-h1{
+.logo {
+  max-width: 200px;
+  margin-left:32%;
+  position: relative;
+  /* Removed margin-left: auto and margin-bottom */
+}
+
+h1 {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color:brown;
+  color: brown;
+  margin: 0;
+  padding: 10px;
 }
 .App {
   max-width: 860px;

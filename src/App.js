@@ -81,7 +81,12 @@ function App() {
 
   return (
     <div className="App">
-      <h1>memo __ magic</h1>
+      <div className="header-container">
+        <div className="logo">
+          <img src="/favicon.ico.PNG" alt="logo" />
+        </div>
+        <h1>memo __ magic</h1>
+      </div>
       <button onClick={suffeleCards}>New Game</button>
 
       <div className="card-grid">
