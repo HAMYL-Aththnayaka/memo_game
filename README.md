@@ -74,7 +74,8 @@ npm install
 
 4. **Start the development server:**
 ```bash
-npm start
+$env:NODE_OPTIONS="--openssl-legacy-provider"
+npm run start
 
 ```
 
@@ -93,6 +94,35 @@ npm start
 
 ---
 
+## 📸 Screenshots
+
+### 🎮 Game Interface
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/37d322bf-9f6e-43b3-b57f-d81846ca7b72" width="45%" />
+  <img src="https://github.com/user-attachments/assets/4b436552-e1d2-48e4-bd1f-088f7ead9647" width="45%" />
+</p>
+
+### 🃏 Card Matching
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c00ede06-f855-4764-a1ee-076441dcd5a6" width="45%" />
+  <img src="https://github.com/user-attachments/assets/d43aa7f3-8c69-42d8-b63a-ae73e7dae453" width="45%" />
+</p>
+
+---
+
+## 🎥 Demo
+
+<p align="center">
+  <a href="https://github.com/user-attachments/assets/0cac85e0-3cc2-4d10-827b-6f6ea129db25">
+    <img src="https://github.com/user-attachments/assets/37d322bf-9f6e-43b3-b57f-d81846ca7b72" width="80%" alt="Magic Memory Game Demo">
+  </a>
+</p>
+
+<p align="center">
+  ▶️ <strong>Click the preview above to watch the demo</strong>
+</p>
 ## 📚 Acknowledgments & References
 
 This project was built following the tutorial series:
